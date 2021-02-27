@@ -10,11 +10,8 @@ let searchText;
 
 const refs = {
     searchInput: document.querySelector('.form__input'),
-    divContent: document.querySelector('.divcontent')
 };
-
 //Submit INPUT TEXT every 500ms
-
 refs.searchInput.addEventListener('keydown', debounce((event) => {
     event.preventDefault();
     searchText = event.target.value;
