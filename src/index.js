@@ -10,15 +10,16 @@ let searchText;
 
 const refs = {
     searchInput: document.querySelector('.form__input'),
+    divCont: document.querySelector('.divcontent')
 };
 //Submit INPUT TEXT every 500ms
 refs.searchInput.addEventListener('keydown', debounce((event) => {
     event.preventDefault();
     searchText = event.target.value;
-    //
-    fetchCountries(searchText);
+    if (searchText == '') {
+        refs.divCont.innerHTML = '';
+    } else {fetchCountries(searchText);}
 
-    //
 
 }, 500)
 )
