@@ -1,0 +1,37 @@
+@import "../../node_modules/@pnotify/core/dist/PNotify.css";
+@import "../../node_modules/@pnotify/mobile/dist/PNotifyMobile.css";
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.one-country-block__profile {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-block {
+  width: 50%;
+}
+.images-block {
+  width: 50%;
+}
+.images-block__img {
+  width: 100%;
+}
+.text-block__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.text-block__value {
+  font-size: 24px;
+}
+li {
+  margin-bottom: 10px;
+}
+.lang-list li {
+  margin-left: 20%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,32 @@
+{{#each this}}
+<div class="one-country-block">
+    <h2>{{name}}</h2>
+    <div class="one-country-block__profile">
+        <div class="text-block">
+            <ul>
+                <li> <span class="text-block__name">
+                        Capital:</span>
+                    <span class="text-block__value">{{capital}}</span>
+                </li>
+                <li> <span class="text-block__name">
+                        Population:</span>
+                    <span class="text-block__value">{{population}}</span>
+                </li>
+                <li> <span class="text-block__name">
+                        Languages:</span>
+                    <ul class="lang-list">
+                        {{#each languages}}
+                        <li class="text-block__value">{{this.name}}</li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="images-block">
+            <img class="images-block__img" src="{{flag}}" alt="flag">
+        </div>
+    </div>
+
+
+</div>
+{{/each}}
